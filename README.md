@@ -1,7 +1,7 @@
 # polen
 Register application for polen asso. Angular - AWS Cognito - NodeJs on AWS Lambda.
 
-![archi](https://polen56.github.io/archi.gif)
+![archi](https://github.com/polen56/webSite/blob/master/archi.gif)
 
 # Context
 During the covid crisis, this allows online registration to visit the apiaries of the Polen association
