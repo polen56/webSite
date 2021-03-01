@@ -25,5 +25,5 @@ script:
   - echo "***** CURL to home url"
   - curl -s http://localhost:4200
   - npm run build
-  - ngh --dir=dist/polen --message="deploy by Travis-ci" --repo=https://$GITHUB_TOKEN@github.com/polen56/polen.github.io.git --branch=master
+  - ngh --dir=dist/polen --message="deploy by Travis-ci" --repo=https://$GITHUB_TOKEN@github.com/polen56/polen56.github.io.git --branch=master
  
