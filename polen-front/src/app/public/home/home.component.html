@@ -33,16 +33,18 @@
               <thead class="thead-light">
               <tr>
                 <th id="publics-table-name">{{ 'PUBLIC.HOME.DATE' | translate }}</th>
+                <th id="publics-table-address">{{ 'PUBLIC.HOME.TIME_SLOT' | translate }}</th>
                 <th id="publics-table-address">{{ 'PUBLIC.HOME.ORGANIZER' | translate }}</th>
                 <th id="publics-table-address">{{ 'PUBLIC.HOME.STATE' | translate }}</th>
                 <th id="publics-table-address">{{ 'PUBLIC.HOME.ACTIVITY' | translate }}</th>
-                <th id="publics-table-phone">{{ 'PUBLIC.HOME.STUDENTS' | translate }}</th>
+                <th id="publics-table-phone" width="150">{{ 'PUBLIC.HOME.STUDENTS' | translate }}</th>
               </tr>
               </thead>
               <tbody>
               <tr *ngFor="let event of events">
                   <td
                   class="font-weight-bold" [id]="event.id + '-public-person'">{{ event.date }}</td>
+                  <td>{{ event.timeSlot }}</td>
                   <td>{{ event.organizer }}</td>
                   <td>{{ event.state }}</td>
                   <td>{{ event.activity }}</td>

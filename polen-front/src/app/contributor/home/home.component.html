@@ -34,6 +34,7 @@
               <thead class="thead-light">
               <tr>
                 <th id="contributors-table-name">{{ 'CONTRIBUTOR.HOME.RESULTS.DATE' | translate }}</th>
+                <th id="contributors-table-address">{{ 'CONTRIBUTOR.HOME.RESULTS.TIME_SLOT' | translate }}</th>
                 <th id="contributors-table-address">{{ 'CONTRIBUTOR.HOME.RESULTS.ORGANIZER' | translate }}</th>
                 <th id="contributors-table-address">{{ 'CONTRIBUTOR.HOME.RESULTS.STATE' | translate }}</th>
                 <th id="contributors-table-address">{{ 'CONTRIBUTOR.HOME.RESULTS.ACTIVITY' | translate }}</th>
@@ -45,6 +46,7 @@
               <tr *ngFor="let event of events">
                   <td
                   class="font-weight-bold" [id]="event.id + '-contributor-person'">{{ event.date }}</td>
+                  <td>{{ event.timeSlot }}</td>
                   <td>{{ event.organizer }}</td>
                   <td>{{ event.state }}</td>
                   <td>{{ event.activity }}</td>

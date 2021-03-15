@@ -93,6 +93,7 @@
       "EVENT_NOT_FOUND_TRY_AGAIN": "Essayez de nouveau avec d'autres critères de recherche.",
       "RESULTS": {
         "DATE": "Date",
+        "TIME_SLOT": "Créneau horaire",
         "ORGANIZER": "Organisateur",
         "STATE": "Lieu",
         "ACTIVITY": "Activité prévue",
@@ -101,6 +102,7 @@
     },
     "EVENT":{
       "DATE": "Date",
+      "TIME_SLOT": "Créneau horaire",
       "ORGANIZER": "Organisateur",
       "STATE": "Lieu",
       "ACTIVITY": "Activité prévue",
@@ -117,6 +119,7 @@
     "HOME": {
       "TITLE": "Voici la liste des prochaines session",
       "DATE": "Date",
+      "TIME_SLOT": "Créneau horaire",
       "ORGANIZER": "Organisateur",
       "STATE": "Lieu",
       "ACTIVITY": "Activité prévue",

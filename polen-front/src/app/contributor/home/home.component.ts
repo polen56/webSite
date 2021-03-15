@@ -6,6 +6,7 @@ import { Event } from 'src/app/model/event.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EventFormComponent } from '../event-form/event-form.component';
 import { Events } from 'src/app/model/events.model.js';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +24,8 @@ export class HomeComponent implements OnInit {
 
   options: any = {};
 
-  constructor(private router: Router,
+  constructor(private datePipe: DatePipe,
+              private router: Router,
               private eventService: EventService,
               private modalService: NgbModal,
               private ngZone: NgZone,
@@ -59,6 +61,7 @@ export class HomeComponent implements OnInit {
   add() {
     const formEvent = this.formBuilder.group({
       date: '',
+      timeSlot: '',
       organizer: '',
       state: '',
       activity: '',
@@ -68,7 +71,8 @@ export class HomeComponent implements OnInit {
     modalEvent.componentInstance.formEvent = formEvent;
     modalEvent.result.then((eventF) => {
       const event = new Event();
-      event.date = eventF.date;
+      event.date = this.datePipe.transform(eventF.date,"dd/MM/yyyy");
+      event.timeSlot = eventF.timeSlot;
       event.organizer = eventF.organizer;
       event.state = eventF.state;
       event.activity = eventF.activity;

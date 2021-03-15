@@ -10,7 +10,13 @@
         <div class="form-group row">
           <label for="date-input" class="col-sm-3 col-form-label field">{{ 'CONTRIBUTOR.EVENT.DATE' | translate }}</label>
           <div class="col-sm-9">
-            <input id="date-input" placeholder="dd/mm/yyyy" type="text" class="form-control" formControlName="date" name="date" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" required>
+            <input id="date-input" placeholder="jour/mois/année" type="text" class="form-control" formControlName="date" name="date" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name-input" class="col-sm-3 col-form-label field">{{ 'CONTRIBUTOR.EVENT.TIME_SLOT' | translate }}</label>
+          <div class="col-sm-9">
+            <input id="name-input" type="text" class="form-control" formControlName="timeSlot" required>
           </div>
         </div>
         <div class="form-group row">

@@ -1,9 +1,11 @@
+import { Injectable } from '@angular/core';
 import { NgbDateParserFormatter, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import * as moment from 'moment';
 
+@Injectable()
 export class MomentDateFormatter extends NgbDateParserFormatter {
 
-    readonly DT_FORMAT = 'MM/DD/YYYY';
+    readonly DT_FORMAT = 'DD/MM/YYYY';
 
     parse(value: string): NgbDateStruct {
         if (value) {
